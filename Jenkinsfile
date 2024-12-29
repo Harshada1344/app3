@@ -29,7 +29,7 @@ pipeline {
         }
         stage ('docker create service') {
             steps {
-                sh '/usr/bin/docker service create --name webservice -p 8000:80 --replicas 2 harshada437/app3'
+                sh '/usr/bin/docker webservice create --name webservice -p 8000:80 --replicas 2 harshada437/app3'
             }
         }
     }
